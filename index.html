@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="An RTL-ready profile settings interface built with Flexbox and internationalized CSS logical properties."
+    >
+
+    <title>Week 03: Logical Properties Lab</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="app-layout">
+        <!-- COMPONENT 1: English LTR Settings Card -->
+        <section class="settings-card" dir="ltr">
+            <header class="settings-card__header">
+                <h2 class="settings-card__title">
+                    Profile Settings
+                </h2>
+
+                <p class="settings-card__subtitle">
+                    Manage your public directory information.
+                </p>
+            </header>
+
+            <div class="settings-card__profile-section">
+                <img
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150"
+                    alt="Profile portrait of Sasha Dupont"
+                    class="profile-avatar"
+                    width="150"
+                    height="150"
+                >
+
+                <div class="profile-info">
+                    <h3 class="profile-info__name">
+                        Sasha Dupont
+                    </h3>
+
+                    <span class="profile-info__status">
+                        Active Editor
+                    </span>
+                </div>
+
+                <button
+                    class="btn btn--secondary"
+                    type="button"
+                >
+                    Change Photo
+                </button>
+            </div>
+
+            <footer class="settings-card__actions">
+                <button
+                    class="btn btn--text"
+                    type="button"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    class="btn btn--primary"
+                    type="button"
+                >
+                    Save Changes
+                </button>
+            </footer>
+        </section>
+
+        <!-- COMPONENT 2: Arabic RTL Settings Card -->
+        <section class="settings-card" dir="rtl" lang="ar">
+            <header class="settings-card__header">
+                <h2 class="settings-card__title">
+                    إعدادات الملف الشخصي
+                </h2>
+
+                <p class="settings-card__subtitle">
+                    إدارة معلومات الدليل العام الخاص بك.
+                </p>
+            </header>
+
+            <div class="settings-card__profile-section">
+                <img
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150"
+                    alt="صورة الملف الشخصي لساشا دوبونت"
+                    class="profile-avatar"
+                    width="150"
+                    height="150"
+                >
+
+                <div class="profile-info">
+                    <h3 class="profile-info__name">
+                        ساشا دوبونت
+                    </h3>
+
+                    <span class="profile-info__status">
+                        محرر نشط
+                    </span>
+                </div>
+
+                <button
+                    class="btn btn--secondary"
+                    type="button"
+                >
+                    تغيير الصورة
+                </button>
+            </div>
+
+            <footer class="settings-card__actions">
+                <button
+                    class="btn btn--text"
+                    type="button"
+                >
+                    إلغاء
+                </button>
+
+                <button
+                    class="btn btn--primary"
+                    type="button"
+                >
+                    حفظ التغييرات
+                </button>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
